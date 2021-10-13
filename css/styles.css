@@ -712,6 +712,15 @@ ul {
 /* формы модалки */
 
 .modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  right: 100%;
+  padding: 40px;
+}
+
+/* .modal-form {
   position: absolute;
   display: flex;
   width: 528px;
@@ -722,7 +731,7 @@ ul {
   padding: 40px;
   outline: 1px solid tomato;
   z-index: 1;
-}
+} */
 
 /* заголовок модалки */
 .modal-title {
@@ -740,6 +749,19 @@ ul {
 .form-field {
   display: flex;
   flex-direction: column;
+  width: 100%;
+
+  margin-bottom: 10px;
+}
+.modal-label {
+  width: 100%;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17px;
+
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
+  margin-bottom: 4px;
 }
 
 .form-modal-button {
