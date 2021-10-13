@@ -691,6 +691,8 @@ ul {
   transform: scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* кнопка закрытия модалки */
 .close-button {
   position: absolute;
   top: 8px;
@@ -704,35 +706,65 @@ ul {
   height: 30px;
   background-color: #ffffff;
   border: 1px solid #999999;
+  z-index: 2;
 }
 
-/* репета */
-/* .backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.2);
-}
-.backdrop.is-hidden {
-  opacity: 1;
-  pointer-events: none;
-}
-.modal {
+/* формы модалки */
+
+.modal-form {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
   width: 528px;
   height: 581px;
-  background-color: var(--primari-bg-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  padding: 15px;
-} */
 
+  flex-direction: column;
+
+  padding: 40px;
+  outline: 1px solid tomato;
+  z-index: 1;
+}
+
+/* заголовок модалки */
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  margin-bottom: 12px;
+}
+
+/* class="form-field" */
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-modal-button {
+  display: flex;
+  justify-content: center;
+}
+/* кнопка отправки форм модалки */
+.modal-button {
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background: var(--accent-color);
+  cursor: pointer;
+  color: var(--primari-bg-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  /* align-items: center; */
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.modal-textarea {
+  resize: none;
+}
 /* основной цвет background: #212121; */
 /* вторичный #757575; */
 /* акцент #2196F3 */
