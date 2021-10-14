@@ -452,7 +452,51 @@
       </div>
     </footer>
     <!-- модальное окно -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- новое 14_10_2021 -->
+    <div class="backdrop is-hidde" data-modal>
+      <div class="modal">
+        <button type="button" class="close-button" data-modal-close>
+          <svg class="icon-close" width="30" height="30">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+
+        <form action="#" class="modal-form">
+          <div class="form-field">
+            <label class="modal-label" for="name">Имя</label>
+            <input class="modal-input" type="text" name="name" id="name" />
+          </div>
+
+          <div class="form-field">
+            <label class="modal-label" for="tel">Телефон</label>
+            <input class="modal-input" type="tel" name="tel" id="tel" />
+          </div>
+
+          <div class="form-field">
+            <label class="modal-label" for="mail">Почта</label>
+            <input class="modal-input" type="email" name="mail" id="mail" />
+          </div>
+
+          <div class="form-field">
+            <label class="modal-label" for="comment">Коментарий</label>
+
+            <textarea
+              class="modal-textarea"
+              name="comment"
+              id="comment"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+
+          <button class="modal-button" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- 14_10_2021 -->
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-button" data-modal-close>
           <svg class="icon-close" width="30" height="30">
@@ -508,7 +552,7 @@
           </div>
         </form>
       </div>
-    </div>
+    </div> -->
     <script src="./js/modal.js"></script>
 
     <!-- скрипт репета -->
