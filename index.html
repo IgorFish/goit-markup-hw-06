@@ -449,10 +449,30 @@
             </li>
           </ul>
         </div>
+        <!-- рассылка -->
+        <form action="#" class="mail-form">
+          <p class="mail-title">подпишись на рассылку</p>
+          <div class="mail-input">
+            <!-- <label class="mail-form-label" for="mail"></label> -->
+
+            <input
+              class="mail-form-input"
+              type="email"
+              name="mail"
+              id="mail"
+              placeholder="E-mail"
+            />
+            <button class="mail-button" type="submit">
+              Подписаться<svg class="mail-icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
     <!-- модальное окно -->
-    <!-- новое 14_10_2021 -->
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-button" data-modal-close>
@@ -526,64 +546,6 @@
       </div>
     </div>
 
-    <!-- 14_10_2021 -->
-    <!-- <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button type="button" class="close-button" data-modal-close>
-          <svg class="icon-close" width="30" height="30">
-            <use href="./images/symbol-defs.svg#icon-close"></use>
-          </svg>
-        </button>
-
-        <form class="modal-form">
-          <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
-          <div class="form-field">
-            <label class="modal-label" for="name">Имя</label>
-            <input class="modal-input" type="text" name="name" id="name" />
-          </div>
-
-          <div class="form-field">
-            <label class="modal-label" for="tel">Телефон</label>
-            <input class="modal-input" type="tel" name="tel" id="tel" />
-          </div>
-
-          <div class="form-field">
-            <label class="modal-label" for="mail">Почта</label>
-            <input class="modal-input" type="email" name="mail" id="mail" />
-          </div>
-
-          <div class="form-field">
-            <label class="modal-label" for="">Коментарий</label>
-
-            <textarea
-              class="modal-textarea"
-              name="comment"
-              id="comment"
-              cols="30"
-              rows="10"
-              placeholder="Введите текст"
-            ></textarea>
-          </div>
-
-          <div class="form-modal-button">
-            <input
-              class="modal-policy"
-              type="checkbox"
-              name="policy"
-              id="policy"
-            />
-            <label class="modal-checkbox" for="policy"
-              >Соглашаюсь с рассылкой и принимаю
-              <a class="modal-checkbox-policy" href="">Условия договора</a>
-            </label>
-          </div>
-
-          <div class="form-modal-button">
-            <button class="modal-button" type="submit">Отправить</button>
-          </div>
-        </form>
-      </div>
-    </div> -->
     <script src="./js/modal.js"></script>
 
     <!-- скрипт репета -->
